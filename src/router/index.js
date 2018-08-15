@@ -15,6 +15,7 @@ const GoodsDetail = (resolve) => require( ['@/components/goods/GoodsDetail'],res
 Vue.use(Router)
 
 export default new Router({
+  mode: "hash",
   linkActiveClass: 'mui-active',
   routes: [
     {
