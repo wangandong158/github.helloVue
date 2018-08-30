@@ -14,10 +14,10 @@ import Globle from './static/GlobleFinal'
 import Moment from 'moment'
 import NavBar from './components/common/Navbar'
 import vuePicturePreview from 'vue-picture-preview'
-import { List, Cell, PullRefresh, Swipe, SwipeItem, Loading, Button, Stepper } from 'vant'
+import { List, Cell, PullRefresh, Swipe, SwipeItem, Loading, Button, Stepper, NavBar } from 'vant'
 import Swip from './components/common/Swip'
 
-Vue.use(PullRefresh).use(Cell).use(List).use(Swipe).use(SwipeItem).use(Loading).use(Button).use(Stepper)
+Vue.use(PullRefresh).use(Cell).use(List).use(Swipe).use(SwipeItem).use(Loading).use(Button).use(Stepper).use(NavBar)
 
 Vue.config.productionTip = false
 Vue.prototype.$GLOBAL = Globle
