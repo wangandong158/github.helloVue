@@ -117,7 +117,7 @@
 
   .mui-icon {
     background-repeat: round;
-    height: 50px;
+    height: 50rem;
     width: 50px;
   }
 
