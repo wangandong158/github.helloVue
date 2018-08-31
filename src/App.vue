@@ -1,9 +1,9 @@
 <template>
-  <div id="app">
+  <div id="app" v-wechat-title="$route.meta.title">
     <!--头部内容-->
     <mt-header title="信息管理系统"></mt-header>
     <transition name="router" mode="out-in">
-      <router-view v-wechat-title="$route.meta.title"> </router-view>
+      <router-view> </router-view>
     </transition>
     <lg-preview></lg-preview>
     <!--底部内容-->
