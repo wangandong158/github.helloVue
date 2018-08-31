@@ -65,20 +65,20 @@
   .tabHeader li {
     list-style: none;
     display: inline-block;
-    height: 30rem;
-    margin-left: 10rem;
+    height: 30px;
+    margin-left: 10px;
   }
 
   .tabHeader ul {
     white-space: nowrap;
-    padding-left: 0rem;
+    padding-left: 0px;
     overflow-x: auto;
-    margin: 5rem;
+    margin: 5px;
   }
 
   .photo-list ul {
-    padding-left: 0rem;
-    margin: 0rem;
+    padding-left: 0px;
+    margin: 0px;
   }
 
   .photo-list li {
@@ -96,13 +96,13 @@
     width: 100%;
     color: white;
     background-color: rgba(0, 0, 0, 0.3);
-    margin-bottom: 0rem;
-    bottom: 0rem;
+    margin-bottom: 0px;
+    bottom: 0px;
   }
 
   image[lazy=loading] {
-    width: 10rem;
-    height: 10rem;
+    width: 10px;
+    height: 10px;
     margin: auto;
   }
 

@@ -2,8 +2,8 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import 'lib-flexible/flexible.js'
 import router from './router'
+import 'lib-flexible/flexible.js'
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import 'vant/lib/vant-css/index.css'
@@ -15,7 +15,7 @@ import Globle from './static/GlobleFinal'
 import Moment from 'moment'
 import NavBar from './components/common/Navbar'
 import vuePicturePreview from 'vue-picture-preview'
-import { List, Cell, PullRefresh, Swipe, SwipeItem, Loading, Button, Stepper, NavBar } from 'vant'
+import { List, Cell, PullRefresh, Swipe, SwipeItem, Loading, Button, Stepper} from 'vant'
 import Swip from './components/common/Swip'
 
 Vue.use(PullRefresh).use(Cell).use(List).use(Swipe).use(SwipeItem).use(Loading).use(Button).use(Stepper).use(NavBar)
