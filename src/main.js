@@ -19,7 +19,7 @@ import { List, Cell, PullRefresh, Swipe, SwipeItem, Loading, Button, Stepper} fr
 import Swip from './components/common/Swip'
 
 Vue.use(PullRefresh).use(Cell).use(List).use(Swipe).use(SwipeItem).use(Loading).use(Button).use(Stepper).use(NavBar)
-
+Vue.use(require('vue-wechat-title'))
 Vue.config.productionTip = false
 Vue.prototype.$GLOBAL = Globle
 Vue.use(MintUI)
