@@ -55,6 +55,9 @@ export default new Router({
     {
       path: '/photo/share',
       name: 'photo.share',
+      meta: {
+        title: '用户中心'
+      },
       component: PhotoShare
     },
     {
