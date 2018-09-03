@@ -54,6 +54,8 @@
       }
     },
     created() {
+      console.log('===='+this.$store.state.count)
+      this.$store.commit('increment')
       this.$ajax.post('/tools/news/news/carousel', {
         columnId: 'new_10000001'
       })

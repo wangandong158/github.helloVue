@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "e2e": "node test/e2e/runner.js",
-    "test": "npm run e2e",
+    "test": "node build/test.js",
     "lint": "eslint --ext .js,.vue src test/e2e/specs",
     "build": "node build/build.js"
   },
@@ -23,7 +23,9 @@
     "vue": "^2.5.2",
     "vue-lazyload": "^1.2.6",
     "vue-picture-preview": "^1.2.0",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-wechat-title": "^2.0.4",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
