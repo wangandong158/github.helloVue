@@ -1,6 +1,7 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
+import Vuex from 'vuex'
 import App from './App'
 import router from './router'
 import 'lib-flexible/flexible.js'
@@ -19,7 +20,7 @@ import { List, Cell, PullRefresh, Swipe, SwipeItem, Loading, Button, Stepper} fr
 import Swip from './components/common/Swip'
 
 Vue.use(PullRefresh).use(Cell).use(List).use(Swipe).use(SwipeItem).use(Loading).use(Button).use(Stepper).use(NavBar)
-Vue.use(require('vue-wechat-title'))
+Vue.use(Vuex)
 Vue.config.productionTip = false
 Vue.prototype.$GLOBAL = Globle
 Vue.use(MintUI)
@@ -50,9 +51,21 @@ Vue.filter('convertData', function (value) {
 Vue.component('navBar', NavBar)
 Vue.component('swip', Swip)
 
+const store = new Vuex.Store({
+  state: {
+    count: 0
+  },
+  mutations: {
+    increment (state) {
+      state.count++
+    }
+  }
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   components: { App },
   template: '<App/>'

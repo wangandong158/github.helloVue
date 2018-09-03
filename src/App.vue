@@ -1,5 +1,5 @@
 <template>
-  <div id="app" v-wechat-title="$route.meta.title">
+  <div id="app">
     <!--头部内容-->
     <mt-header title="信息管理系统"></mt-header>
     <transition name="router" mode="out-in">
