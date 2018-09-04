@@ -1,6 +1,9 @@
 <template xmlns:>
-  <div>
-    购物车界面
+  <div class="parent">
+    <div class="box">
+      <span class="item">1</span>
+      <span class="item">2</span>
+    </div>
   </div>
 </template>
 
@@ -15,5 +18,17 @@
 </script>
 
 <style scoped>
-
+.parent{
+  width: 100%;
+  height: 400px;
+  background-color: burlywood;
+}
+.box {
+  width: 100%;
+  height: 400px;
+  display: flex;
+}
+.item:nth-child(2){
+  align-self: center;
+}
 </style>
