@@ -67,14 +67,15 @@
         })
     },
     methods: {
-      javacalljs:function() {
+      
+    },
+    javacalljs:function() {
         this.$router.push({name:'news.list'});
       },
       javacalljsparam:function(params) {
         alert(params);
         this.$router.push({name:'goods.list'});
       },
-    },
   }
 </script>
 
