@@ -36,6 +36,11 @@
       }
     },
     created() {
+      try {
+        jump.jsCallWebView('调用成功，耶！！！')
+      } catch (error) {
+        alert('error');
+      }
       this.$ajax.post(this.$GLOBAL.newsTab, {
         eId: "10000040",
         oIdPath: ["10000000", "50261000", "50261123", "50261874"]

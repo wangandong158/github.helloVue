@@ -66,6 +66,15 @@
           console.log(err)
         })
     },
+    methods: {
+      javacalljs() {
+        this.$router.push({name:'news.list'});
+      },
+      javacalljsparam(params) {
+        alert(params);
+        this.$router.push({name:'goods.list'});
+      },
+    },
   }
 </script>
 
