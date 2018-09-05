@@ -54,6 +54,7 @@
       }
     },
     created() {
+      window.javacalljs = this.javacalljs;
       console.log('===='+this.$store.state.count)
       this.$store.commit('increment')
       this.$ajax.post('/tools/news/news/carousel', {
@@ -68,14 +69,14 @@
     },
     methods: {
       
+      javacalljs:function() {
+        this.$router.push({name:'news.list'});
+      },
+      javacalljsparam:function(params) {
+        alert(params);
+        this.$router.push({name:'goods.list'});
+      },
     },
-    // javacalljs:function() {
-    //     this.$router.push({name:'news.list'});
-    //   },
-    //   javacalljsparam:function(params) {
-    //     alert(params);
-    //     this.$router.push({name:'goods.list'});
-    //   },
   }
 </script>
 
