@@ -55,6 +55,7 @@
     },
     created() {
       window.javacalljs = this.javacalljs;
+      window.javacalljsparam = this.javacalljsparam;
       console.log('===='+this.$store.state.count)
       this.$store.commit('increment')
       this.$ajax.post('/tools/news/news/carousel', {
